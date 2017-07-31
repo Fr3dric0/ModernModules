@@ -1,0 +1,144 @@
+/**
+ * Cards
+ */
+.modern-card {
+    align-items: stretch;
+
+    background-color: #FFF;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    height: auto;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    width: 100%
+}
+
+.modern-card > * {
+    flex: 1;
+}
+
+.modern-card > .thumbnail {
+    height: 20em; /* The card size */
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.modern-card > .thumbnail > img {
+    height: 100%;
+
+    left: 50%;
+
+    top: 50%;
+
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+
+    width: auto;
+}
+
+.modern-card > .data {
+    align-items: stretch;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 1em;
+}
+
+.modern-card > .data > h3 {
+    font-size: 1.75em;
+
+    margin-top: 0;
+
+    text-align: center;
+}
+
+.modern-card > .data a.button {
+    color: #FFF;
+
+    margin-top: 1em;
+
+    text-align: center;
+}
+
+.modern-card > .data a.button:hover {
+    text-decoration: none;
+}
+
+/**
+ * Vertical skin
+ */
+.modern-card.vertical {
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.modern-card.vertical > .thumbnail {
+    height: 15em;
+}
+
+.modern-card.vertical > .thumbnail > img{
+    height: auto;
+
+    width: 100%;
+}
+
+/**
+ * Styling
+ */
+
+.modern-card.raised {
+    box-shadow: rgba(0, 0, 0, .1) 0.1em 0.05em 0.2em;
+}
+
+.modern-card.material {
+
+}
+
+@media screen and (max-width: 40em) {
+    .modern-card {
+        flex-direction: column;
+    }
+
+    .modern-card > .thumbnail {
+        height: 15em;
+    }
+
+    .modern-card > .thumbnail > img {
+        height: auto;
+
+        width: 100%;
+    }
+}
+
+/**
+ * Spacing
+ */
+.modern-spacing {
+    padding: 0;
+    margin: 0;
+    height: 0;
+
+    width: 100%;
+}
+
+.modern-spacing.vertical {
+    height: 100%;
+
+    width: auto;
+}
