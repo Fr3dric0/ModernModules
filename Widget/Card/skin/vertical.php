@@ -13,7 +13,7 @@
         <?php endif; ?>
 
         <?php if (!empty($link)): ?>
-            <a class="button" href="<?=$link?>" <?=$openInTab == true ? 'target="blank"' : ''?>>
+            <a class="button" href="<?=$link?>" <?=!empty($openInTab) && $openInTab == true ? 'target="blank"' : ''?>>
                 <?=!empty($linkLabel) ? $linkLabel : $link?>
             </a>
         <?php endif; ?>
